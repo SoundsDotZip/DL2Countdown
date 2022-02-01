@@ -1,5 +1,5 @@
 function bo(c, t, f) { if (c) return t; else return f; }
-const cdi = setInterval(timerchange,100)
+const cdi = setInterval(timerchange,250)
 function timerchange()
 {
     var timeleft = (1643976000-Math.floor(Date.now()/1000));
