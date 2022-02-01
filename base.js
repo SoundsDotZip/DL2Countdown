@@ -13,6 +13,6 @@ function timerchange()
     else
     {
         document.getElementById("timer").innerHTML = Math.floor(timeleft/3600)%24 + bo(Math.floor(timeleft/60)%60 < 10,":0",":") + Math.floor(timeleft/60)%60 + bo(timeleft%60 < 10,":0",":") + timeleft%60;
-        document.getElementById("timerdays").innerHTML = Math.floor(timeleft/86400) + bo(Math.floor(timeleft/86400) > 1, " DAYS", " DAY");
+        if (Math.floor(timeleft/86400) == 0) document.getElementById("timerdays").innerHTML = "TODAY"; else document.getElementById("timerdays").innerHTML = Math.floor(timeleft/86400) + bo(Math.floor(timeleft/86400) > 1, " DAYS", " DAY");
     }
 }
