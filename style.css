@@ -16,6 +16,16 @@ h1{
     color: white;
     font-size: 100px;
 }
+@media only screen and (max-width: 600px){
+    h1{
+        color: white;
+        font-size: 60px;
+    }
+    div{
+        text-align: center;
+        line-height: 80px;
+    }
+}
 h1#timer{
     line-height: 0px;
 }
