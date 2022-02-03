@@ -2,7 +2,7 @@ function bo(c, t, f) { if (c) return t; else return f; }
 const cdi = setInterval(timerchange,250)
 function timerchange()
 {
-    var timeleft = (1643976000-Math.floor(Date.now()/1000));
+    var timeleft = (1643932800-Math.floor(Date.now()/1000));
     var days = "";
     if (timeleft < 0)
     {
